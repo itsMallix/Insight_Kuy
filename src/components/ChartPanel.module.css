@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.title {
+  font-size: 1rem;
+  font-family: var(--font-heading);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.colSelect {
+  font-size: 0.78rem;
+  padding: 6px 30px 6px 10px;
+  max-width: 160px;
+}
+
+.chartTypeToggle {
+  display: flex;
+  border: 3px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.typeBtn {
+  padding: 8px 12px;
+  background: var(--surface);
+  border: none;
+  border-right: 2px solid var(--border);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast);
+  color: var(--text-secondary);
+}
+
+.typeBtn:last-child {
+  border-right: none;
+}
+
+.typeBtn:hover {
+  background: var(--bg-alt);
+}
+
+.typeBtnActive {
+  background: var(--primary);
+  color: white;
+}
+
+.typeBtnActive:hover {
+  background: var(--primary-light);
+}
+
+.chartWrapper {
+  padding-top: var(--space-sm);
+}
+
+.empty {
+  text-align: center;
+  padding: var(--space-2xl);
+  color: var(--text-muted);
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

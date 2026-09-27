@@ -14,8 +14,8 @@ export default function DashboardContent() {
 
   const stats = useMemo(() => {
     if (!activeSheetData) return [];
-    return generateStatsFromSheet(activeSheetData);
-  }, [activeSheetData]);
+    return generateStatsFromSheet(activeSheetData, activeSheet);
+  }, [activeSheetData, activeSheet]);
 
   return (
     <main className={`main-content ${sidebarCollapsed ? 'sidebar-collapsed' : ''} ${chatOpen ? 'chat-open' : ''}`}>

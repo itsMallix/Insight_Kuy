@@ -354,7 +354,7 @@ a:hover {
 
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-lg);
   margin-bottom: var(--space-xl);
 }
